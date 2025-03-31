@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    default: native
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: file:///C:/Users/can/Desktop/online-education-exam-platform/config-repo
+server:
+  port: 8888
+
+
+
+
+
+

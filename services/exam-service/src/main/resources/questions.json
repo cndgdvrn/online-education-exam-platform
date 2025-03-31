@@ -1,0 +1,102 @@
+[
+  {
+    "questionText": "Java'da hangi anahtar kelime bir sınıfın başka bir sınıftan miras almasını sağlar?",
+    "options": ["this", "extends", "super", "implements"],
+    "correctOptionIndex": 1
+  },
+  {
+    "questionText": "Türkiye'nin başkenti neresidir?",
+    "options": ["İstanbul", "Ankara", "İzmir", "Bursa"],
+    "correctOptionIndex": 1
+  },
+  {
+    "questionText": "HTML'in açılımı nedir?",
+    "options": ["HyperText Markup Language", "Hyper Transfer Markup Language", "HighText Markup Language", "HyperText Markdown Language"],
+    "correctOptionIndex": 0
+  },
+  {
+    "questionText": "5 + 3 * 2 işleminin sonucu nedir?",
+    "options": ["11", "16", "13", "10"],
+    "correctOptionIndex": 0
+  },
+  {
+    "questionText": "Hangi hayvan memeli değildir?",
+    "options": ["Yarasa", "Köpek", "Balina", "Kaplumbağa"],
+    "correctOptionIndex": 3
+  },
+  {
+    "questionText": "Java'da 'List' arayüzü hangi paket içinde bulunur?",
+    "options": ["java.util", "java.io", "java.net", "java.lang"],
+    "correctOptionIndex": 0
+  },
+  {
+    "questionText": "Dünyanın en büyük okyanusu hangisidir?",
+    "options": ["Hint Okyanusu", "Atlas Okyanusu", "Arktik Okyanusu", "Pasifik Okyanusu"],
+    "correctOptionIndex": 3
+  },
+  {
+    "questionText": "Hangisi bir programlama dili değildir?",
+    "options": ["Python", "JavaScript", "HTML", "C++"],
+    "correctOptionIndex": 2
+  },
+  {
+    "questionText": "Hangisi bir Java framework'üdür?",
+    "options": ["Laravel", "Django", "Spring", "React"],
+    "correctOptionIndex": 2
+  },
+  {
+    "questionText": "JSON verisi hangi biçimde saklanır?",
+    "options": ["Array", "Object", "Text", "XML"],
+    "correctOptionIndex": 2
+  },
+  {
+    "questionText": "Mona Lisa tablosu kimin eseridir?",
+    "options": ["Picasso", "Van Gogh", "Leonardo da Vinci", "Michelangelo"],
+    "correctOptionIndex": 2
+  },
+  {
+    "questionText": "Java'da 'null' neyi temsil eder?",
+    "options": ["Sıfır", "Boş String", "Bir nesnenin referanssız hali", "Bir hata"],
+    "correctOptionIndex": 2
+  },
+  {
+    "questionText": "Hangisi bir HTTP metodu değildir?",
+    "options": ["GET", "POST", "PULL", "DELETE"],
+    "correctOptionIndex": 2
+  },
+  {
+    "questionText": "İngilizce'de 'blue' ne anlama gelir?",
+    "options": ["Kırmızı", "Mavi", "Yeşil", "Sarı"],
+    "correctOptionIndex": 1
+  },
+  {
+    "questionText": "RAM ne işe yarar?",
+    "options": ["Kalıcı veri saklama", "Geçici veri saklama", "Grafik çizme", "Ses oynatma"],
+    "correctOptionIndex": 1
+  },
+  {
+    "questionText": "Hangisi algoritma tasarım tekniğidir?",
+    "options": ["Tümevarım", "Dinamik programlama", "Olasılık", "Deneme yanılma"],
+    "correctOptionIndex": 1
+  },
+  {
+    "questionText": "Linux komut satırında klasör değiştirme komutu nedir?",
+    "options": ["cd", "ls", "mkdir", "rm"],
+    "correctOptionIndex": 0
+  },
+  {
+    "questionText": "React hangi programlama dili ile yazılır?",
+    "options": ["Python", "C#", "Java", "JavaScript"],
+    "correctOptionIndex": 3
+  },
+  {
+    "questionText": "Hangisi bir veri tabanı yönetim sistemidir?",
+    "options": ["Oracle", "Eclipse", "Photoshop", "Jira"],
+    "correctOptionIndex": 0
+  },
+  {
+    "questionText": "1 GB kaç MB'dir?",
+    "options": ["1000", "1024", "512", "2048"],
+    "correctOptionIndex": 1
+  }
+]

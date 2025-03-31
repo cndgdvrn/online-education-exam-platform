@@ -1,0 +1,24 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://can:1234@localhost:27017/examdb?authSource=admin
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: can
+    password: 1234
+
+rabbitmq:
+  exchange: course.internal.exchange
+  routing-key: course.student.enrolled.routing-key
+  queue: course.student.enrolled.queue
+  exam-submitted:
+    routing-key: course.exam.submitted.routing-key
+    queue: course.exam.submitted.queue
+
+server:
+  port: 8083
+
+
+

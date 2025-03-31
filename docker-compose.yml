@@ -1,0 +1,57 @@
+version: '3.8'
+services:
+  user-db:
+    image: postgres:15
+    container_name: container-user-db
+    environment:
+        POSTGRES_USER: can
+        POSTGRES_PASSWORD: 1234
+        POSTGRES_DB: userdb
+    ports:
+      - "5432:5432"
+    volumes:
+      - user-db-data:/var/lib/postgresql/data
+
+  course-db:
+    image: postgres:15
+    container_name: container-course-db
+    environment:
+        POSTGRES_USER: can
+        POSTGRES_PASSWORD: 1234
+        POSTGRES_DB: coursedb
+    ports:
+      - "5433:5432"
+    volumes:
+      - course-db-data:/var/lib/postgresql/data
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: can
+      RABBITMQ_DEFAULT_PASS: 1234
+
+  mongodb:
+    image: mongo:4.4
+    container_name: container-exam-db
+    ports:
+      - 27017:27017
+    environment:
+      - MONGO_INITDB_DATABASE=examdb
+      - MONGO_INITDB_ROOT_USERNAME=can
+      - MONGO_INITDB_ROOT_PASSWORD=1234
+    volumes:
+      - mongodb-data:/data/db
+
+
+
+volumes:
+    user-db-data:
+      driver: local
+    course-db-data:
+      driver: local
+    mongodb-data:
+      driver: local
