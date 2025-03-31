@@ -1,0 +1,44 @@
+// Purpose: Ignore files and directories in git
+/target/
+/out/
+*.log
+*.class
+*.jar
+*.war
+*.iml
+*.ipr
+*.iws
+
+
+.idea/
+*.iml
+.vscode/
+
+# OS trash
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+*.tmp
+
+# Environment
+.env
+.env.*
+
+# Docker
+docker-compose.override.yml
+**/docker-volume/
+**/tmp/
+
+
+# Test Reports
+/test-output/
+/surefire-reports/
+
+# Others
+*.swp
+*.bak
+*.tmp
+*.orig
