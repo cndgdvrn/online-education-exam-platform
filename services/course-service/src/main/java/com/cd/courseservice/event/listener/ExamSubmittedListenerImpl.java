@@ -25,7 +25,7 @@ public class ExamSubmittedListenerImpl implements ExamSubmittedListener{
     public void handleExamSubmitted(String payload) {
         try {
             ExamSubmittedEvent event = mapper.readValue(payload, ExamSubmittedEvent.class);
-            Course course = courseRepository.findById(event.getCourseId()).orElseThrow(() -> new RuntimeException("Course not found"));
+            courseRepository.findById(event.getCourseId()).orElseThrow(() -> new RuntimeException("Course not found"));
             courseService.updateScore(event.getStudentId(), event.getCourseId(), event.getScore());
             log.info("Updated score for student {} in course {}", event.getStudentId(), event.getCourseId());
         }catch (Exception e){
