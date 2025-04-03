@@ -1,4 +1,4 @@
-[# 🎓 Online Education Exam Platform
+🎓 Online Education Exam Platform
 
 A distributed microservices architecture for online course management, student enrollment, and exam processing — built with ❤️ using **Spring Boot**, **RabbitMQ**, **PostgreSQL**, **Feign**, **OpenFeign**, **Eureka**, **Spring Cloud Config**, and modern architecture patterns like **SAGA** & **Outbox**.
 
