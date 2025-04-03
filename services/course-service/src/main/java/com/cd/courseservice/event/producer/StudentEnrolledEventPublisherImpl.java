@@ -26,7 +26,7 @@ public class StudentEnrolledEventPublisherImpl implements StudentEnrolledEventPu
         log.info("Publishing StudentEnrolledEvent to exchange: {}, routingKey: {}, payload: {}", exchange, routingKey, event);
         try {
             rabbitTemplate.convertAndSend(exchange, routingKey, event);
-            log.info("Event published successfully");
+            log.info(" publishStudentEnrolledEvent published successfully");
         } catch (Exception e) {
             log.error("Failed to publish event to RabbitMQ", e);
             throw new RuntimeException("RabbitMQ publish failed", e);

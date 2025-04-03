@@ -1,8 +1,8 @@
 package com.cd.examservice.service;
 import com.cd.examservice.dto.ExamSubmittedEvent;
-import com.cd.examservice.model.Exam;
-import com.cd.examservice.model.ExamOutboxMessage;
-import com.cd.examservice.model.Question;
+import com.cd.examservice.entity.Exam;
+import com.cd.examservice.entity.ExamOutboxMessage;
+import com.cd.examservice.entity.Question;
 import com.cd.examservice.repository.ExamRepository;
 import com.cd.examservice.repository.OutboxRepository;
 import com.cd.examservice.utils.QuestionGenerator;

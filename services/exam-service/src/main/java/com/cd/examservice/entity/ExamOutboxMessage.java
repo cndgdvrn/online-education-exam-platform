@@ -1,4 +1,4 @@
-package com.cd.examservice.model;
+package com.cd.examservice.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

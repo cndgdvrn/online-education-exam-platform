@@ -30,6 +30,36 @@ public class RabbitMQConfig {
     private String examSubmittedQueue;
     @Value("${rabbitmq.exam-submitted.routing-key}")
     private String examSubmittedRoutingKey;
+    @Value("${rabbitmq.enroll-started.queue}")
+    private String enrollStartedQueue;
+    @Value("${rabbitmq.enroll-started.routing-key}")
+    private String enrollStartedRoutingKey;
+    @Value("${rabbitmq.rollback-queue}")
+    private String enrollStudentRollbackQueue;
+    @Value("${rabbitmq.rollback-routing-key}")
+    private String enrollStudentRollbackRoutingKey;
+
+    @Bean
+    public Queue enrollStudentRollbackQueue() {
+        return new Queue(enrollStudentRollbackQueue);
+    }
+
+    @Bean
+    public Binding enrollStudentRollbackBinding() {
+        return BindingBuilder.bind(enrollStudentRollbackQueue()).to(courseExchange()).with(enrollStudentRollbackRoutingKey);
+    }
+
+
+    @Bean
+    public Queue enrollStartedQueue() {
+        return new Queue(enrollStartedQueue);
+    }
+
+    @Bean
+    public Binding enrollStartedBinding() {
+        return BindingBuilder.bind(enrollStartedQueue()).to(courseExchange()).with(enrollStartedRoutingKey);
+    }
+
 
     @Bean
     public TopicExchange courseExchange(){
@@ -46,12 +76,6 @@ public class RabbitMQConfig {
         return BindingBuilder.bind(examSubmittedQueue()).to(courseExchange()).with(examSubmittedRoutingKey);
     }
 
-
-
-    @Bean
-    public TopicExchange exchange() {
-        return new TopicExchange(exchange);
-    }
 
     @Bean
     public Queue queue() {

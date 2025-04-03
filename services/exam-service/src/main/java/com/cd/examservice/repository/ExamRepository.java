@@ -1,6 +1,6 @@
 package com.cd.examservice.repository;
 
-import com.cd.examservice.model.Exam;
+import com.cd.examservice.entity.Exam;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 import java.util.Optional;

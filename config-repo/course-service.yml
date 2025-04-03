@@ -25,6 +25,11 @@ rabbitmq:
   exam-submitted:
     routing-key: course.exam.submitted.routing-key
     queue: course.exam.submitted.queue
+  rollback-routing-key: course.student.rollback.routing-key
+  rollback-queue: course.student.rollback.queue
+  enroll-started:
+    queue: course.enroll.started.queue
+    routing-key: course.enroll.started.routing-key
 
 server:
   port: 8082

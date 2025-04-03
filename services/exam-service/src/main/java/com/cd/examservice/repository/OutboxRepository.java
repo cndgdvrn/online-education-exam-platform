@@ -1,6 +1,6 @@
 package com.cd.examservice.repository;
 
-import com.cd.examservice.model.ExamOutboxMessage;
+import com.cd.examservice.entity.ExamOutboxMessage;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 

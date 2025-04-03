@@ -1,6 +1,6 @@
 package com.cd.examservice.utils;
 
-import com.cd.examservice.model.Question;
+import com.cd.examservice.entity.Question;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.stereotype.Component;

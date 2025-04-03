@@ -1,9 +1,7 @@
 package com.cd.examservice.event.dispatcher;
 
-import com.cd.examservice.model.ExamOutboxMessage;
+import com.cd.examservice.entity.ExamOutboxMessage;
 import com.cd.examservice.repository.OutboxRepository;
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
